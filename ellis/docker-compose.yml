@@ -1,0 +1,15 @@
+services:
+  # Serviço da aplicação
+  app:
+    build: . # Constrói a partir do diretório atual
+    container_name: api-alura
+    ports:
+      - "8000:8000" # Mapeando porta do host para a porta do container
+    volumes:
+      - .:/app # As alterações feitas enquanto o app estiver no ar serão automaticamente refletidas no container graças ao --reload do uvicorn
+    networks:
+      - api-network
+
+networks:
+    api-network:
+      driver: bridge
