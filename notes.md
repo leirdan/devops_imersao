@@ -13,3 +13,7 @@
 - O Docker Compose é uma ferramenta extremamente útil para automatizar o processo de gerar e subir um container, sendo escrita em YAML e permitindo grande controle aos profissionais de DevOps.
 - O código está escrito no `docker-compose.yml`.
 - Comando para executar o compose: `docker compose up [-d, opcional]`.
+
+## ACTIONS
+- Ferramenta do GitHub onde podemos automatizar a geração de imagens Docker. Podemos definir para que, assim que um commit for feito à branch principal, sejam rodadas pipelines para gerar uma imagem, rodar testes unitários, analisar percentuais de cobertura do projeto e mais.
+- Uma boa prática (e também convenção) é utilizar labels `MAJOR` ou `MINOR` pra marcar uma versão da sua aplicação.
